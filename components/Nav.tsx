@@ -30,12 +30,12 @@ export default function Nav() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="block h-12 w-auto lg:hidden"
+                    className="block h-12 w-auto lg:hidden logo"
                     src="JA-logo.svg"
                     alt="Your Company"
                   />
                   <img
-                    className="hidden h-12 w-auto lg:block"
+                    className="hidden h-12 w-auto lg:block logo"
                     src="JA-logo.svg"
                     alt="Your Company"
                   />
