@@ -69,14 +69,7 @@ export default function Nav() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
-                  type="button"
-                  className="rounded-full p-1 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-                >
-                  <span className="sr-only">Theme</span>
-                  <ThemeToggle />
-                </button>
-                
+                <ThemeToggle />
               </div>
             </div>
           </div>
