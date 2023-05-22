@@ -11,14 +11,14 @@ function classNames(...classes: string[]) {
 
 export default function Nav() {
   return (
-    <Disclosure as="nav" className="shadow">
+    <Disclosure as="nav" className="border-b border-white/10">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 hover:bg-orange-100 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -30,18 +30,18 @@ export default function Nav() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=orange&shade=600"
+                    className="block h-12 w-auto lg:hidden"
+                    src="JA-logo.svg"
                     alt="Your Company"
                   />
                   <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=orange&shade=600"
+                    className="hidden h-12 w-auto lg:block"
+                    src="JA-logo.svg"
                     alt="Your Company"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                  {/* Current: "border-orange-500", Default: "border-transparent text-gray-500 hover:border-orange-300 hover:text-orange-700" */}
+                  {/* Current: "border-orange-500", Default: "border-transparent hover:border-orange-300 hover:text-orange-700" */}
                   <a
                     href="#"
                     className="inline-flex items-center border-b-2 border-orange-500 px-1 pt-1 text-sm font-medium hover:border-orange-300 hover:text-orange-700"
@@ -83,7 +83,7 @@ export default function Nav() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 pb-4 pt-2">
-              {/* Current: "bg-orange-50 border-orange-500 text-orange-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+              {/* Current: "bg-orange-50 border-orange-500 text-orange-700", Default: "border-transparent hover:bg-orange-50 hover:border-orange-300 hover:text-orange-700" */}
               <Disclosure.Button
                 as="a"
                 href="#"
