@@ -50,10 +50,10 @@ function classNames(...classes: string[]) {
 const Skills = () => {
   return (
       <div>
-        <h2 className="text-sm font-medium">Proficiencies</h2>
+        <h2 className="text-sm text-center mb-10 font-medium">Proficiencies</h2>
         <ul
           role="list"
-          className="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
+          className="mt-3 grid grid-cols-2 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
         >
           {skills.map((skill) => (
             <li
