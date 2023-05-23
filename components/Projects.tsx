@@ -2,9 +2,9 @@ const projects = [
     {
       id: 1,
       name: 'Queerently Watching',
-      href: '#',
+      href: 'https://www.queerentlywatching.com/',
       description: 'Queerently Watching is a community-driven platform for LGBTQ+ individuals and allies to share and discover media that tells authentic queer stories. Our mission is to create a safe and inclusive space for users to connect, discuss, and celebrate queer representation in film and television.',
-      imageSrc: '/QW.png',
+      imageSrc: '/projects/QW.png',
       imageAlt: 'Logo for Queerently Watching website.',
       technologies: 'TypeScript, Next.js, Tailwind CSS, Supabase, Vercel.'
     },
@@ -13,7 +13,7 @@ const projects = [
       name: 'Employee Tracking App',
       href: 'https://github.com/internetjen/employee-tracker-slay',
       description: 'A command-line application that allows a user to manage employee information in a company database. The user can view the departments, roles, employees and their details such as the salary, department and manager they report to. They can also add to and edit the database by adding new departments, roles, employees and update the role of an employee.',
-      imageSrc: '/employee-tracker.png',
+      imageSrc: '/projects/employee-tracker.png',
       imageAlt: 'Screenshot of terminal window displaying employee update options.',
       technologies: 'Node.js, Inquirer, and MySQL2, Chalk, and Console.Table',
     },
@@ -22,7 +22,7 @@ const projects = [
       name: 'Ecommerce App (backend)',
       href: 'https://github.com/internetjen/e-commerce-back-end-slay',
       description: 'The application allows its user to manage an e-commerce database. The user will be able to view, edit, and delete any categories, products, or tags.',
-      imageSrc: '/ecommerce-backend.png',
+      imageSrc: '/projects/ecommerce-backend.png',
       imageAlt: 'Shopping cart and bag.',
       technologies: 'Node.js, Express.js, MySQL, Sequelize, and Insomnia.'
     },
@@ -31,7 +31,7 @@ const projects = [
       name: 'Simple Timed JavaScript Quiz',
       href: 'https://simplejs-quiz.netlify.app/',
       description: 'A timed JavaScript quiz with 8 multiple-choice questions will test some basic coding knowledge.',
-      imageSrc: '/javascript-quiz.png',
+      imageSrc: '/projects/javascript-quiz.png',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
       technologies: 'HTML, CSS, JavaScript'
     }

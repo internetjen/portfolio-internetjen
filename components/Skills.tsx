@@ -3,32 +3,42 @@ import Image from "next/image";
 const skills = [
   {
     name: "JavaScript",
-    icon: "/javascript.svg",
+    icon: "/proficiencies/javascript.svg",
     href: "#",
   },
   {
     name: "React",
-    icon: "/react-js.svg",
+    icon: "/proficiencies/react-js.svg",
     href: "#",
   },
   {
     name: "SQL",
-    icon: "/database.svg",
+    icon: "/proficiencies/database.svg",
     href: "#",
   },
   {
     name: "Node.js",
-    icon: "/node-js.svg",
+    icon: "/proficiencies/node-js.svg",
     href: "#",
   },
   {
     name: "HTML",
-    icon: "/html5.svg",
+    icon: "/proficiencies/html5.svg",
     href: "#",
   },
   {
     name: "CSS",
-    icon: "/css3.svg",
+    icon: "/proficiencies/css3.svg",
+    href: "#",
+  },
+  {
+    name: "TypeScript",
+    icon: "/proficiencies/typescript.svg",
+    href: "#",
+  },
+  {
+    name: "Git",
+    icon: "/proficiencies/git.svg",
     href: "#",
   },
 ];

@@ -18,7 +18,7 @@ export default function Nav() {
             <div className="relative flex h-16 justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 hover:bg-orange-100 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 hover:bg-orange-100 hover:text-orange-600 focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -44,27 +44,27 @@ export default function Nav() {
                   {/* Current: "border-orange-500", Default: "border-transparent hover:border-orange-300 hover:text-orange-700" */}
                   <a
                     href="#"
-                    className="inline-flex items-center border-b-2 border-orange-500 px-1 pt-1 text-sm font-medium hover:border-orange-300 hover:text-orange-700"
+                    className="inline-flex items-center border-b-2 border-orange-500 px-1 pt-1 text-sm font-medium hover:border-orange-300 hover:text-orange-400"
                   >
-                    Dashboard
+                    Home
                   </a>
                   <a
                     href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-300 hover:text-orange-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-300 hover:text-orange-400"
                   >
-                    Team
+                    About
                   </a>
                   <a
                     href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-300 hover:text-orange-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-300 hover:text-orange-400"
                   >
                     Projects
                   </a>
                   <a
                     href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-300 hover:text-orange-700"
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-300 hover:text-orange-400"
                   >
-                    Calendar
+                    C/V
                   </a>
                 </div>
               </div>
@@ -87,21 +87,21 @@ export default function Nav() {
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-300 hover:bg-orange-50 hover:text-orange-700"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-300 hover:bg-orange-50 hover:text-orange-400"
               >
                 Team
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-300 hover:bg-orange-50 hover:text-orange-700"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-300 hover:bg-orange-50 hover:text-orange-400"
               >
                 Projects
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-300 hover:bg-orange-50 hover:text-orange-700"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-300 hover:bg-orange-50 hover:text-orange-400"
               >
                 Calendar
               </Disclosure.Button>
