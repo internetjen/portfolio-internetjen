@@ -39,19 +39,19 @@ const navigation = {
           </svg>
         ),
       },
-      // {
-      //   name: 'YouTube',
-      //   href: '#',
-      //   icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
-      //     <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-      //       <path
-      //         fillRule="evenodd"
-      //         d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
-      //         clipRule="evenodd"
-      //       />
-      //     </svg>
-      //   ),
-      // },
+      {
+        name: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/jennifer-arboleda/',
+        icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
+          <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+            <path
+              fillRule="evenodd"
+              d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"       
+              clipRule="evenodd"
+            />
+          </svg>
+        ),
+      },
     ],
   }
   

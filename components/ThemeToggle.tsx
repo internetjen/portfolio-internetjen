@@ -20,8 +20,8 @@ export default function ThemeToggle() {
       checked={enabled}
       onChange={setEnabled}
       className={classNames(
-        enabled ? 'bg-orange-400' : 'bg-slate-950',
-        'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-200 focus:ring-offset-2'
+        enabled ? 'bg-orange-400' : 'bg-stone-700',
+        'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none'
       )}
     >
       <span className="sr-only">Use setting</span>

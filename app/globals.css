@@ -4,15 +4,15 @@
 
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 25, 25, 25;
   --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 245, 245, 245;
 }
 
 .dark {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+  --foreground-rgb: 245, 245, 245;
+  --background-start-rgb: 38, 38, 38;
+  --background-end-rgb: 22, 22, 22;
 }
 
 .dark .logo {
