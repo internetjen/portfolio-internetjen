@@ -38,7 +38,7 @@ const skills = [
   },
   {
     name: "Git",
-    icon: "/proficiencies/git.svg",
+    icon: "/proficiencies/git-alt.svg",
     href: "#",
   },
 ];
