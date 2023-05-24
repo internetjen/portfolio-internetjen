@@ -1,12 +1,11 @@
-import Hero from "@/components/Hero"
-import Nav from "@/components/Nav"
+import Hero from "@/components/Hero";
 
 const AboutPage = () => {
   return (
-    <div>
+    <main className="flex min-h-screen flex-col items-center justify-between p-4">
       <Hero />
-    </div>
-  )
-}
+    </main>
+  );
+};
 
-export default AboutPage
+export default AboutPage;

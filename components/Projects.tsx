@@ -80,12 +80,9 @@ const Projects = () => {
             <h3 className="mt-4 text-lg flex flex-wrap justify-center">
               {project.name}
             </h3>
-            <p className="mt-1 text-sm bold">{project.description}</p>
+            <div className="mt-1 text-sm bold">{project.description}</div>
             <div className="mt-8 flex flex-wrap justify-center bg-orange-100 rounded-md">
-              <p className="text-sm font-medium text-slate-800 flex flex-wrap justify-center p-2 rounded-md">
-                {/* <span className="inline-block px-2 py-1 mb-2 text-sm font-medium">
-                  Technologies:
-                </span> */}
+              <div className="text-sm font-medium text-slate-800 flex flex-wrap justify-center p-2 rounded-md">
                 <ul className="flex flex-wrap justify-center">
                   {project.technologies.map((technology) => (
                     <li key={technology} className="px-2 py-1 italic">
@@ -93,7 +90,7 @@ const Projects = () => {
                     </li>
                   ))}
                 </ul>
-              </p>
+              </div>
             </div>
           </Link>
         ))}

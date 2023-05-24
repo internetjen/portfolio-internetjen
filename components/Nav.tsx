@@ -12,6 +12,7 @@ function classNames(...classes: string[]) {
 }
 
 export default function Nav() {
+
   return (
     <Disclosure as="nav" className="border-b border-white/10">
       {({ open }) => (
@@ -48,32 +49,30 @@ export default function Nav() {
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-orange-500", Default: "border-transparent hover:border-orange-300 hover:text-orange-700" */}
+
                   <Link
                     href="/"
                     className="inline-flex items-center border-b-2 border-orange-400 px-1 pt-1 text-sm font-medium hover:border-orange-200 hover:text-orange-400"
-                    // className={`inline-flex items-center ${
-                    //   router.pathname === '/' ? 'border-b-2 border-orange-500' : 'border-transparent hover:border-orange-300 hover:text-orange-700'
-                    // } px-1 pt-1 text-sm font-medium hover:border-orange-200 hover:text-orange-400`}
                   >
                     Home
                   </Link>
+
                   <Link
                     href="/About"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-200 hover:text-orange-400"
-                    // className={`inline-flex items-center ${
-                    //   router.pathname === '/' ? 'border-b-2 border-orange-500' : 'border-transparent hover:border-orange-300 hover:text-orange-700'
-                    // } px-1 pt-1 text-sm font-medium hover:border-orange-200 hover:text-orange-400`}
                   >
                     About
                   </Link>
+
                   <Link
                     href="/Projects"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-200 hover:text-orange-400"
                   >
                     Projects
                   </Link>
+
                   <Link
-                    href="/Contact-Me"
+                    href="/Contact"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-200 hover:text-orange-400"
                   >
                     Contact
@@ -89,34 +88,43 @@ export default function Nav() {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 pb-4 pt-2">
               {/* Current: "bg-orange-50 border-orange-500 text-orange-700", Default: "border-transparent hover:bg-orange-50 hover:border-orange-300 hover:text-orange-700" */}
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-orange-400 bg-orange-200 py-2 pl-3 pr-4 text-base font-medium text-orange-400"
-              >
-                Home
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-400 hover:bg-orange-200 hover:text-orange-400"
-              >
-                About
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-400 hover:bg-orange-200 hover:text-orange-400"
-              >
-                Projects
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-400 hover:bg-orange-200 hover:text-orange-400"
-              >
-                Contact
-              </Disclosure.Button>
+              <Link href="/">
+                <Disclosure.Button
+                  as="a"
+                  href="/"
+                  className="block border-l-4 border-orange-400 bg-orange-200 py-2 pl-3 pr-4 text-base font-medium text-orange-400"
+                >
+                  Home
+                </Disclosure.Button>
+              </Link>
+              <Link href="/About">
+                <Disclosure.Button
+                  as="a"
+                  href="#"
+                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-400 hover:bg-orange-200 hover:text-orange-400"
+                >
+                  About
+                </Disclosure.Button>
+              </Link>
+
+              <Link href="/Projects">
+                <Disclosure.Button
+                  as="a"
+                  href="#"
+                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-400 hover:bg-orange-200 hover:text-orange-400"
+                >
+                  Projects
+                </Disclosure.Button>
+              </Link>
+              <Link href="/Contact">
+                <Disclosure.Button
+                  as="a"
+                  href="#"
+                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-400 hover:bg-orange-200 hover:text-orange-400"
+                >
+                  Contact
+                </Disclosure.Button>
+              </Link>
             </div>
           </Disclosure.Panel>
         </>
