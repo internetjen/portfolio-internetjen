@@ -1,5 +1,7 @@
+import Nav from "@/components/Nav";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({ 
   weight: '400',
@@ -15,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

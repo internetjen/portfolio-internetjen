@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const About = () => {
+const Hero = () => {
   return (
     <>
       <div className="relative isolate overflow-hidden">
@@ -46,4 +46,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Hero;

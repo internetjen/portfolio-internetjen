@@ -77,7 +77,6 @@ const Skills = () => {
                       alt={skill.name}
                       width={40}
                       height={40}
-
                     />
                   </div>
                   <div className="flex-1 text-sm mt-2">

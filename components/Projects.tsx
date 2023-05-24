@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 const projects = [
   {
     id: 1,
@@ -25,7 +27,7 @@ const projects = [
     imageSrc: "/projects/employee-tracker.png",
     imageAlt:
       "Screenshot of terminal window displaying employee update options.",
-    technologies: ["Node.js", "Inquirer", "MySQL2", "Chalk", "Console.Table"],
+    technologies: ["Node.js", "Inquirer", "MySQL", "Chalk"],
   },
   {
     id: 3,
@@ -58,7 +60,7 @@ const Projects = () => {
       </h2>
       <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
         {projects.map((project) => (
-          <a
+          <Link
             key={project.id}
             href={project.href}
             target="_blank" // Open link in a new tab
@@ -66,10 +68,12 @@ const Projects = () => {
             className="group border border-slate-300 rounded-lg p-4"
           >
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-slate-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img
+              <Image
                 src={project.imageSrc}
                 alt={project.imageAlt}
                 className="h-full w-full object-cover object-center group-hover:opacity-75"
+                width={600}
+                height={600}
               />
             </div>
 
@@ -91,7 +95,7 @@ const Projects = () => {
                 </ul>
               </p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </div>
