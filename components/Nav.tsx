@@ -6,12 +6,22 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import ThemeToggle from "./ThemeToggle";
 import Link from "next/link";
 import Image from "next/image";
+import React from "react";
+import { usePathname } from "next/navigation";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Nav() {
+  const path = usePathname();
+
+  const navLink = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/About" },
+    { name: "Projects", href: "/Projects" },
+    { name: "Contact", href: "/Contact" },
+  ];
 
   return (
     <Disclosure as="nav" className="border-b border-white/10">
@@ -49,34 +59,19 @@ export default function Nav() {
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-orange-500", Default: "border-transparent hover:border-orange-300 hover:text-orange-700" */}
-
-                  <Link
-                    href="/"
-                    className="inline-flex items-center border-b-2 border-orange-400 px-1 pt-1 text-sm font-medium hover:border-orange-200 hover:text-orange-400"
-                  >
-                    Home
-                  </Link>
-
-                  <Link
-                    href="/About"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-200 hover:text-orange-400"
-                  >
-                    About
-                  </Link>
-
-                  <Link
-                    href="/Projects"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-200 hover:text-orange-400"
-                  >
-                    Projects
-                  </Link>
-
-                  <Link
-                    href="/Contact"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-200 hover:text-orange-400"
-                  >
-                    Contact
-                  </Link>
+                  {navLink.map((navLink) => (
+                    <Link
+                      key={navLink.name}
+                      href={navLink.href}
+                      className={` ${
+                        path === navLink.href
+                          ? "bg-orange-50 border-orange-500 text-orange-700"
+                          : ""
+                      } inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-orange-200 hover:text-orange-400`}
+                    >
+                      {navLink.name}
+                    </Link>
+                  ))}
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -85,48 +80,79 @@ export default function Nav() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+
+        <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 pb-4 pt-2">
-              {/* Current: "bg-orange-50 border-orange-500 text-orange-700", Default: "border-transparent hover:bg-orange-50 hover:border-orange-300 hover:text-orange-700" */}
-              <Link href="/">
-                <Disclosure.Button
-                  as="a"
-                  href="/"
-                  className="block border-l-4 border-orange-400 bg-orange-200 py-2 pl-3 pr-4 text-base font-medium text-orange-400"
-                >
-                  Home
-                </Disclosure.Button>
-              </Link>
-              <Link href="/About">
-                <Disclosure.Button
-                  as="a"
-                  href="#"
-                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-400 hover:bg-orange-200 hover:text-orange-400"
-                >
-                  About
-                </Disclosure.Button>
+              {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+              <Link
+              href='/'
+              >
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className={` ${
+                  path === '/' ? "bg-orange-50 border-orange-500 text-orange-700 hover:border-orange-200 hover:text-orange-400"
+                  : ""
+                } space-y-1 pb-4 pt-2 block border-l-4 py-2 pl-3 pr-4 text-base font-medium hover:border-orange-200 hover:text-orange-400
+                `}
+              >
+                Home
+              </Disclosure.Button>
               </Link>
 
-              <Link href="/Projects">
-                <Disclosure.Button
-                  as="a"
-                  href="#"
-                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-400 hover:bg-orange-200 hover:text-orange-400"
-                >
-                  Projects
-                </Disclosure.Button>
+              <Link
+              href='/About'
+              >
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className={` ${
+                  path === '/About' ? "bg-orange-50 border-orange-500 text-orange-700 hover:border-orange-200 hover:text-orange-400" 
+                  : ""
+                } space-y-1 pb-4 pt-2 block border-l-4 py-2 pl-3 pr-4 text-base font-medium hover:border-orange-200 hover:text-orange-400
+                `}
+              >
+                About
+              </Disclosure.Button>
               </Link>
-              <Link href="/Contact">
-                <Disclosure.Button
-                  as="a"
-                  href="#"
-                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-400 hover:bg-orange-200 hover:text-orange-400"
-                >
-                  Contact
-                </Disclosure.Button>
+
+              <Link
+              href='/Projects'
+              >
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className={` ${
+                  path === '/Projects' ? "bg-orange-50 border-orange-500 text-orange-700 hover:border-orange-200 hover:text-orange-400" 
+                  : ""
+                } space-y-1 pb-4 pt-2 block border-l-4 py-2 pl-3 pr-4 text-base font-medium hover:border-orange-200 hover:text-orange-400
+                `}
+              >
+                Projects
+              </Disclosure.Button>
               </Link>
+
+              <Link
+              href='/Contact'
+              >
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className={` ${
+                  path === '/Contact' ? "bg-orange-50 border-orange-500 text-orange-700 hover:bg-gray-50 hover:border-orange-200 hover:text-orange-400" 
+                  : ""
+                } space-y-1 pb-4 pt-2 block border-l-4 py-2 pl-3 pr-4 text-base font-medium hover:border-orange-200 hover:text-orange-400
+                `}
+              >
+                Contact
+              </Disclosure.Button>
+              </Link>
+
             </div>
           </Disclosure.Panel>
+
+
+          
         </>
       )}
     </Disclosure>
