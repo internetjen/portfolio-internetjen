@@ -2,12 +2,18 @@ import Nav from "@/components/Nav";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/Footer";
+import { Metadata } from 'next';
+
 
 const montserrat = Montserrat({ 
   weight: '400',
   subsets: ['latin'] 
 });
 
+export const metadata: Metadata = {
+  title: 'Jennifer Arboleda',
+};
+ 
 
 export default function RootLayout({
   children,

@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="mx-auto max-w-2xl">
               <div className="max-w-lg">
                 <h1 className="mt-10 text-4xl font-bold tracking-tight sm:text-6xl">
-                  I&apos;m Jennifer Arboleda.
+                  I&apos;m Jen.
                 </h1>
                 <p className="mt-6 text-lg leading-8">
                   I&apos;m a software engineer
