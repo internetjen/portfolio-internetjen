@@ -35,7 +35,7 @@ const ContactPage = () => {
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <h2 className="text-3xl font-bold tracking-tight">Get in touch</h2>
             <p className="mt-6 text-lg leading-8">
-              Thank you for visiting my portfolio! I'm excited to connect with
+              Thank you for visiting my portfolio! I&apos;m excited to connect with
               you. Please feel free to reach out using any of the following
               methods:
             </p>
