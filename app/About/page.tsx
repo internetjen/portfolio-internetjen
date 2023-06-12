@@ -32,10 +32,10 @@ const AboutPage = () => {
             </div>
 
             <div className="flex items-center justify-center mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen">
-              <div
+              {/* <div
                 className="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 md:-mr-20 lg:-mr-36"
                 aria-hidden="true"
-              />
+              /> */}
               <Image
                 alt="dev photo on computer as a child"
                 src="/lil-internetjen.png"
