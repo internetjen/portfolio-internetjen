@@ -13,7 +13,7 @@ const Hero = () => {
                   I&apos;m Jen.
                 </h1>
                 <p className="mt-6 text-lg leading-8">
-                  I&apos;m a software engineer
+                  A software engineer based in Chicago.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -43,7 +43,6 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 -z-10 h-24" />
       </div>
     </>
   );
