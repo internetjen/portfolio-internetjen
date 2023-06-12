@@ -64,7 +64,7 @@ const Skills = () => {
               {skills.map((skill) => (
                 <li
                   key={skill.name}
-                  className="border border-slate-300 rounded-md p-4 flex flex-col items-center text-center"
+                  className=" rounded-md p-4 flex flex-col items-center text-center"
                 >
                   <div
                     className={classNames(

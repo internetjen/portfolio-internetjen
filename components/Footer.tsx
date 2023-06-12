@@ -72,7 +72,7 @@ const navigation = {
               ))}
             </div>
             <p className="mt-8 text-xs leading-5 md:order-1 md:mt-0">
-              &copy; 2023 internetjen, Inc. All rights reserved.
+              &copy; 2023 Jennifer Arboleda. All rights reserved.
             </p>
           </div>
         </div>
