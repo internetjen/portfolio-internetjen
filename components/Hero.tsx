@@ -10,10 +10,10 @@ const Hero = () => {
             <div className="mx-auto max-w-2xl">
               <div className="max-w-lg">
                 <h1 className="mt-10 text-4xl font-bold tracking-tight sm:text-6xl">
-                  I&apos;m Jen.
+                  Jennifer Arboleda
                 </h1>
                 <p className="mt-6 text-lg leading-8">
-                  A software engineer based in Chicago.
+                  A Chicago-based <span className="border-b-2 border-orange-300">software engineer</span> with expertise in full-stack development and a particular affinity for front-end design. 
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
