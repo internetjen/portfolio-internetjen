@@ -62,9 +62,9 @@ const ContactPage = () => {
                 <dd>
                   <a
                     className="hover:text-orange-700"
-                    href="mailto:itsjenlissette@gmail.com"
+                    href="mailto:arboleda.jen@gmail.com"
                   >
-                    itsjenlissette@gmail.com
+                    arboleda.jen@gmail.com
                   </a>
                 </dd>
               </div>
