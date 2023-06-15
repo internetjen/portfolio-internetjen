@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Switch } from '@headlessui/react';
+import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 
 
 function classNames(...classes: string[]): string {
@@ -29,9 +30,12 @@ export default function ThemeToggle() {
         aria-hidden="true"
         className={classNames(
           enabled ? 'translate-x-5' : 'translate-x-0',
-          'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out'
+          'pointer-events-none inline-block h-5 w-5 transform bg-orange-50 rounded-full shadow ring-0 transition duration-200 ease-in-out'
         )}
-      />
+        >
+
+        {enabled ? <SunIcon className="text-orange-400" /> : <MoonIcon className="text-stone-700" />}
+      </span>
     </Switch>
   );
 }
